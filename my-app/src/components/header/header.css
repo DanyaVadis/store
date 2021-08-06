@@ -1,0 +1,21 @@
+.header {
+    margin-top: 0.5rem;
+    padding-left: 10px;
+}
+a {
+    text-decoration: none;    
+    color: #fff;
+}
+.header ul {
+    list-style: none;
+}
+
+.header ul li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.header ul li:hover {
+    background-color: #444;
+}
