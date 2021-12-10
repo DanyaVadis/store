@@ -1,0 +1,23 @@
+.cardsList {
+    padding: 120px 0 40px;
+}
+
+@media (max-width: 992px) {
+    .cardsList {
+        padding-top: 90px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .cardsList {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardsList {
+        padding-top: 60px;
+    }
+}

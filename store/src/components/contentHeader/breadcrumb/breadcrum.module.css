@@ -1,0 +1,55 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.svg {
+    transition: all .3s ease;
+}
+.home:hover .svg{
+    fill: #F53B49;
+}
+
+.home,
+.item {
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+
+.item a {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(56, 66, 85, 0.6);
+}
+
+.home::after,
+.item::after {
+    content: '»';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -19px;
+    font-size: 16px;
+    color: rgba(56, 66, 85, 0.6);
+}
+
+.item:hover a {
+    color: #F53B49;
+    text-decoration: underline;
+} 
+
+.item.inactive {
+    pointer-events: none;
+    cursor: default;
+}
+
+.item.inactive::after {
+    content: '';
+}

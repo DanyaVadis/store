@@ -1,0 +1,9 @@
+.navItem {
+    padding: 10px 10px;
+}
+
+.navItem a {
+    color: inherit;
+    text-decoration: none;
+}
+

@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    padding: 12px 20px 13px;
+    border: 1px solid #F53B49;
+    color: #F53B49;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 4px;
+    height: 42px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #F53B49;
+}
+
+.btn.white {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+}
+
+.btn.grey {
+    background: #384255;
+    border: none;
+    border-radius: 6px;
+}
+.btn.grey:hover {
+    background: #596375;
+}
+
+.btn.white:hover {
+    color: #1A1A25;
+    background: rgb(223, 223, 223);
+}
+
+.btn.hoverRed:hover {
+    color: #F53B49;
+}
+

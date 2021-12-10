@@ -1,0 +1,123 @@
+.forClient {
+    padding: 100px 20px 100px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clientBlock {
+    width: 25%;
+    min-height: 305px;
+    text-align: center;
+    background: #fff;
+    padding: 30px 47px 40px;
+    border-right: 1px solid rgba(133, 143, 164, 0.2);
+}
+
+.clientBlock:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.clientBlock:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.img {
+    margin-bottom: 27px;
+}
+
+.title {
+    color: #1A1A25;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0 0 10px;
+}
+
+.text {
+    color: #384255;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0 0 20px;
+}
+
+.link {
+    color: #F53B49;
+    text-decoration: none;
+    position: relative;
+}
+
+.link svg {
+    position: absolute;
+    top: 5px;
+    right: -15px;
+}
+
+.clientBlock.big .title {
+    color: #fff;
+}
+
+.clientBlock.big .text {
+    color: #F7F7F7;
+}
+
+.clientBlock.big .link {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .forClient {
+        padding-top: 60px;
+    }
+
+    .clientBlock {
+        width: 50%;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .clientBlock:first-child {
+        border-bottom: 1px solid rgba(133, 143, 164, 0.2);
+        border-right: 1px solid rgba(133, 143, 164, 0.2);
+        border-radius: 0px;
+    }
+
+    .clientBlock:last-child {
+        border-top: 1px solid rgba(133, 143, 164, 0.2);
+        border-left: 1px solid rgba(133, 143, 164, 0.2);
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .forClient {
+        padding-top: 30px;
+    }
+    .clientBlock {
+        width: 100%;
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(133, 143, 164, 0.2);
+        border-radius: 0px;
+    }
+    .clientBlock:first-child {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(133, 143, 164, 0.2);
+        border-radius: 0px;
+    }
+
+    .clientBlock:last-child {
+        border-width: 0px 0px 1px 0px;
+        border-style: solid;
+        border-color: rgba(133, 143, 164, 0.2);
+        border-radius: 0px;
+    }
+}

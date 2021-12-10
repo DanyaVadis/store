@@ -1,0 +1,29 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subCategoryBtn {
+    display: inline-block;
+    padding: 8px 12px 9px;
+    background: rgba(144, 156, 181, 0.2);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 12px;
+    color: #384255;
+    cursor: pointer;
+}
+
+.subCategoryBtn.active {
+    background: #F53B49;
+    color: #fff;
+}
+

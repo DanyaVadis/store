@@ -1,0 +1,246 @@
+.slider {
+    padding: 40px 20px 0px;
+}
+.container {
+    position: relative;
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(43.38deg, rgba(245, 59, 73, 0) 7.65%, rgba(201, 43, 55, 0.8) 80.58%), #F53B49;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.sliderInner {
+    display: flex;
+}
+
+.btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.slide {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.text {
+    width: 512px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.text h1 {
+    margin: 0 0 24px 0;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+
+.boldText {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #F7F7F7;
+}
+
+.blackText {
+    font-weight: 800;
+    font-size: 89px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #1A1A25;
+}
+
+.train {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    z-index: 2;
+}
+
+.train img {
+    height: 100%;
+    width: auto;
+}
+
+.block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.block img {
+    height: 100%;
+    width: auto;
+}
+
+
+
+@media (max-width: 1400px) {
+
+    .block,
+    .train,
+    .slide {
+        height: 450px;
+    }
+
+    .block {
+        right: -160px;
+    }
+
+    .text h1,
+    .boldText {
+        font-size: 42px;
+    }
+    
+    .blackText {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .block,
+    .train,
+    .slide {
+        height: 400px;
+    }
+
+    .block {
+        right: -140px;
+    }
+    .text h1,
+    .boldText {
+        font-size: 36px;
+    }
+    
+    .blackText {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        padding: 20px 20px 0 ;
+    }
+    .block,
+    .slide {
+        height: 350px;
+    }
+
+    .block {
+        right: -120px;
+    }
+    .train {
+        height: 280px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .text {
+        width: 450px;
+    }
+    .text h1,
+    .boldText {
+        font-size: 32px;
+    }
+    .text h1 {
+        margin-bottom: 18px;
+    }
+    
+    .blackText {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .block,
+    .slide {
+        height: 280px;
+    }
+
+    .block {
+        right: -90px;
+    }
+
+    .train {
+        height: 230px;
+    }
+    .text {
+        width: 350px;
+    }
+    .text h1,
+    .boldText {
+        font-size: 24px;
+    }
+    .text h1 {
+        margin-bottom: 14px;
+    }
+    
+    .blackText {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .block,
+    .slide {
+        height: 460px;
+    }
+
+    .block {
+        right: -500px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .train {
+        height: 180px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .slideBtn {
+        border: 1px solid #000;
+        padding: 12px 20px 13px;
+        color: #000;
+    }
+    .text h1,
+    .boldText {
+        color: #000;
+    }
+    .text h1 {
+        color: #000;
+    }
+    
+    .blackText {
+        color: #fff;
+    }
+}

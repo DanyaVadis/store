@@ -1,0 +1,175 @@
+.cardItem {
+    position: relative;
+    padding: 0 15px;
+    min-width: 250px;
+}
+
+.cardItemInner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cardItem:hover {
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.12)) drop-shadow(0px 4px 15px rgba(19, 15, 38, 0.1));
+}
+
+.icons {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.like {
+    position: absolute;
+    top: 0;
+    left: 26px;
+}
+
+.new {
+    position: absolute;
+    top: 0;
+    left: 52px;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.cardImg img {
+    width: 100%;
+}
+
+.content {
+    padding: 20px 20px 25px;
+}
+
+.stock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+}
+
+.amountTitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 6px;
+    white-space: nowrap;
+}
+
+.dots {
+    display: flex;
+}
+
+.dots span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.dots span:last-child {
+    margin-right: 0;
+}
+
+.amount.zero .dots span {
+    border: 1px solid #F53B49;
+}
+
+.amount.zero .amountTitle {
+    color: #F53B49;
+}
+
+.amount.one .dots span {
+    border: 1px solid #F99808;
+}
+
+.amount.one .dots span:first-child {
+    background: #F99808;
+}
+
+.amount.one .amountTitle {
+    color: #F99808;
+}
+
+.amount.three .amountTitle,
+.amount.two .amountTitle {
+    color: #2FC509;
+}
+
+.amount.three .dots span,
+.amount.two .dots span {
+    border: 1px solid #2FC509;
+}
+
+.amount.three .dots span:nth-child(3),
+.amount.three .dots span:nth-child(2),
+.amount.three .dots span:first-child,
+.amount.two .dots span:nth-child(2),
+.amount.two .dots span:first-child {
+    background: #2FC509;
+}
+
+.stockInShop {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #4B7EE8;
+    white-space: nowrap;
+    height: 15px;
+}
+
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1A1A25;
+    min-height: 48px;
+}
+
+.title:hover {
+    color: #F53B49;
+}
+
+.characteristicsItem {
+    display: flex;
+}
+
+.characteristicLabel span {
+    color: #909CB5;
+}
+
+.characteristicValue span {
+    color: #384255;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newPrice {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 135.94%;
+    color: #1A1A25;
+}
+
+.oldPrice {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 135.94%;
+    text-decoration-line: line-through;
+    color: #858FA4;
+}
