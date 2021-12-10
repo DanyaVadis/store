@@ -5,13 +5,13 @@ import './reset.css';
 import App from './components/app/app';
 import { Provider } from 'react-redux';
 import store from './store';
-import {BrowserRouter as Router} from "react-router-dom";
+import {HashRouter } from "react-router-dom";
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router>
+        <HashRouter>
             <App />
-        </Router>
+        </HashRouter>
     </Provider>
     ,
     document.getElementById('root')
